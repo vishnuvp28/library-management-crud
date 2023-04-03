@@ -2,11 +2,10 @@ import { Card } from "react-bootstrap";
 import { Base } from "./Base";
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import { useParams } from "react-router-dom";
-import { historydata } from "./historydata";
 
-export function Hisview({ his, setHis }) {
+export function Hisview({ his}) {
  const {id}=useParams();
- const per = historydata[id];
+ const per = his[id];
 
   const history=useHistory();
   return (

@@ -1,11 +1,10 @@
 import { useHistory, useParams } from "react-router-dom";
 import { Base } from "./Base";
-import { scidata } from "./scidata";
 import { Card } from "react-bootstrap";
 
 export function Scienceview({ science, setScience }) {
   const {id}=useParams();
-  const per = scidata[id];
+  const per = science[id];
  
    const history=useHistory();
   return (<Base title={"Science"}>

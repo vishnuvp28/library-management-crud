@@ -2,14 +2,13 @@ import { Card } from "react-bootstrap";
 import { Base } from "./Base";
 import { useParams } from "react-router-dom/cjs/react-router-dom.min";
 import { useHistory } from "react-router-dom";
-import { biographydata } from "./biographydata";
 
 
 
-export function Bioview({ bio,setBio}) {
+export function Bioview({ bio}) {
   const history=useHistory();
     const { id } = useParams();
-    const per = biographydata[id];
+    const per = bio[id];
   return (
     <Base title={"Biography"}>
     

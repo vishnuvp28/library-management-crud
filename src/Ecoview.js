@@ -1,11 +1,10 @@
 import { Card } from "react-bootstrap";
 import { Base } from "./Base";
 import { useHistory, useParams } from "react-router-dom";
-import { ecodata } from "./ecodata";
 
 export function Ecoview({ eco, setEco }) {
   const {id}=useParams();
-  const per = ecodata[id];
+  const per = eco[id];
  
    const history=useHistory();
   return (

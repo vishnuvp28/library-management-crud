@@ -1,13 +1,11 @@
 import { Card } from "react-bootstrap";
 import { Base } from "./Base";
 import { useHistory, useParams } from "react-router-dom";
-import { historydata } from "./historydata";
-import { geodata } from "./geodata";
 
 export function Geoview({ geo, setGeo }) {
 
   const {id}=useParams();
-  const per=geodata[id];
+  const per=geo[id];
 
   const history=useHistory();
   return (

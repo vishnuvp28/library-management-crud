@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { Route, Switch } from "react-router-dom";
 import { Library } from "./Library";
@@ -24,6 +23,12 @@ import { Hisview } from "./Hisview";
 import { Geoview } from "./Geoview";
 import { Ecoview } from "./Ecoview";
 import { Tamiladd } from "./Tamiladd";
+import { Bioadd } from "./Bioadd";
+import { Ecoadd } from "./Ecoadd";
+import { Geoadd } from "./Geoadd";
+import { Hisadd } from "./Hisadd";
+import { Scienceadd } from "./Scienceadd";
+
 
 function App() {
   const[tamil,setTamil]=useState(tamildata);
@@ -70,12 +75,12 @@ function App() {
           <Ecoview eco={eco} setEco={setEco}/>
         </Route>
         <Route path="/ecoadd">
-          <Economics eco={eco} setEco={setEco}/>
+          <Ecoadd eco={eco} setEco={setEco}/>
         </Route>
 
 
         <Route path="/geoadd">
-        <Geography geo={geo} setGeo={setGeo}/>
+        <Geoadd geo={geo} setGeo={setGeo}/>
         </Route>
         <Route path="/geoedit">
         <Geography geo={geo} setGeo={setGeo}/>
@@ -92,12 +97,12 @@ function App() {
         <History his={his} setHis={setHis}/>
         </Route>
         <Route path="/hisadd">
-        <History his={his} setHis={setHis}/>
+        <Hisadd his={his} setHis={setHis}/>
         </Route>
 
 
         <Route path="/scienceadd">
-        <Science science={science} setScience={setScience} />
+        <Scienceadd science={science} setScience={setScience} />
         </Route>
         <Route path="/scienceedit">
         <Science science={science} setScience={setScience} />
@@ -108,7 +113,7 @@ function App() {
 
 
         <Route path="/bioadd">
-        <Biography bio={bio} setBio={setBio} />
+        <Bioadd bio={bio} setBio={setBio} />
         </Route>
         <Route path="/bioview/:id">
         <Bioview bio={bio} setBio={setBio} />

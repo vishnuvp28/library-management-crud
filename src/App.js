@@ -28,6 +28,11 @@ import { Ecoadd } from "./Ecoadd";
 import { Geoadd } from "./Geoadd";
 import { Hisadd } from "./Hisadd";
 import { Scienceadd } from "./Scienceadd";
+import { Bioedit } from "./Bioedit";
+import { Hisedit } from "./Hisedit";
+import { Ecoedit } from "./Ecoedit";
+import { Geoedit } from "./Geoedit";
+import { Scienceedit } from "./Scienceedit";
 
 
 function App() {
@@ -68,8 +73,8 @@ function App() {
 
 
 
-        <Route path="/ecoedit">
-          <Economics eco={eco} setEco={setEco}/>
+        <Route path="/ecoedit/:id">
+          <Ecoedit eco={eco} setEco={setEco}/>
         </Route>
         <Route path="/ecoview/:id">
           <Ecoview eco={eco} setEco={setEco}/>
@@ -82,8 +87,8 @@ function App() {
         <Route path="/geoadd">
         <Geoadd geo={geo} setGeo={setGeo}/>
         </Route>
-        <Route path="/geoedit">
-        <Geography geo={geo} setGeo={setGeo}/>
+        <Route path="/geoedit/:id">
+        <Geoedit geo={geo} setGeo={setGeo}/>
         </Route>
         <Route path="/geoview/:id">
         <Geoview geo={geo} setGeo={setGeo}/>
@@ -93,8 +98,8 @@ function App() {
         <Route path="/hisview/:id">
         <Hisview his={his} setHis={setHis}/>
         </Route>
-        <Route path="/hisedit">
-        <History his={his} setHis={setHis}/>
+        <Route path="/hisedit/:id">
+        <Hisedit his={his} setHis={setHis}/>
         </Route>
         <Route path="/hisadd">
         <Hisadd his={his} setHis={setHis}/>
@@ -104,8 +109,8 @@ function App() {
         <Route path="/scienceadd">
         <Scienceadd science={science} setScience={setScience} />
         </Route>
-        <Route path="/scienceedit">
-        <Science science={science} setScience={setScience} />
+        <Route path="/scienceedit/:id">
+        <Scienceedit science={science} setScience={setScience} />
         </Route>
         <Route path="/scienceview/:id">
         <Scienceview science={science} setScience={setScience} />
@@ -118,15 +123,15 @@ function App() {
         <Route path="/bioview/:id">
         <Bioview bio={bio} setBio={setBio} />
         </Route>
-        <Route path="/bioedit">
-        <Biography bio={bio} setBio={setBio} />
+        <Route path="/bioedit/:id">
+        <Bioedit bio={bio} setBio={setBio} />
         </Route>
 
 
         <Route path="/tamiladd">
         <Tamiladd tamil={tamil} setTamil={setTamil}/>
         </Route>
-        <Route path="/tamiledit">
+        <Route path="/tamiledit/:id">
         <Tamiledit tamil={tamil} setTamil={setTamil}/>
         </Route>
         <Route path="/tamilview/:id">

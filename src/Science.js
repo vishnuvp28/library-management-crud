@@ -30,9 +30,9 @@ export function Science({science,setScience}) {
             <Button variant="primary" onClick={()=>history.push(`/scienceview/${idx}`)}>
               View
             </Button>{" "}
-            <Button variant="success" onClick={()=>history.push("/scienceedit")}>
+            <Button variant="success" onClick={()=>history.push(`/scienceedit/${per.id}`)}>
               Edit
-            </Button>
+            </Button>{" "}
             <Button variant="danger" onClick={()=>deleteUser(per.id)}>
              Delete
             </Button>
@@ -42,6 +42,9 @@ export function Science({science,setScience}) {
         ))}
         </div> <br></br>   <Button variant="dark" className="add" onClick={() => history.push("/scienceadd")}>
         Add
+      </Button>{" "}
+      <Button variant="dark" className="add" onClick={() => history.push("/library")}>
+        Back
       </Button><br></br><br></br><br></br></Base>
   );
 }

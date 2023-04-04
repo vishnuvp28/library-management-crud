@@ -33,9 +33,9 @@ export function Geography({geo,setGeo}) {
             <Button variant="primary"  onClick={()=>history.push(`/geoview/${idx}`)}>
               View
             </Button>{" "}
-            <Button variant="success"  onClick={()=>history.push("/geoedit")}>
+            <Button variant="success"  onClick={()=>history.push(`/geoedit/${per.id}`)}>
               Edit
-            </Button>
+            </Button>{" "}
             <Button variant="danger" onClick={()=>deleteUser(per.id)}>
              Delete
             </Button>
@@ -46,6 +46,9 @@ export function Geography({geo,setGeo}) {
           </div>
          <br></br> <Button variant="dark" className="add" onClick={() => history.push("/geoadd")}>
         Add
+      </Button>{" "}
+      <Button variant="dark" className="add" onClick={() => history.push("/library")}>
+        Back
       </Button>
       <br></br>
       <br></br>

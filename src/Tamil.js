@@ -30,7 +30,7 @@ export function Tamil({tamil,setTamil}) {
             <Button variant="primary" onClick={()=>history.push(`/tamilview/${idx}`)}>
               View
             </Button>{" "}
-            <Button variant="success" onClick={()=>history.push('/tamiledit')}>
+            <Button variant="success" onClick={()=>history.push(`/tamiledit/${per.id}`)}>
               Edit
             </Button>{" "}
             <Button variant="danger" onClick={()=>deleteUser(per.id)}>
@@ -43,9 +43,10 @@ export function Tamil({tamil,setTamil}) {
           </div>
           <br></br> <Button variant="dark" className="add" onClick={() => history.push("/tamiladd")}>
         Add
+      </Button>{" "}
+      <Button variant="dark" className="add" onClick={() => history.push("/library")}>
+        Back
       </Button><br></br><br></br><br></br>
-       
-
     </Base>
   );
 }

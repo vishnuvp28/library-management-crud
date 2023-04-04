@@ -28,7 +28,7 @@ export function Biography({bio,setBio}) {
             <Button variant="primary" onClick={()=>history.push(`/bioview/${idx}`)}>
               View
             </Button>{" "}
-            <Button variant="success" onClick={()=>history.push("/bioedit")}>
+            <Button variant="success" onClick={()=>history.push(`/bioedit/${per.id}`)}>
               Edit
             </Button>{" "}
             <Button variant="danger" onClick={()=>deleteUser(per.id)}>
@@ -41,6 +41,9 @@ export function Biography({bio,setBio}) {
         </div>
         <br></br><Button variant="dark" className="add" onClick={() => history.push("/bioadd")}>
         Add
+      </Button>{" "}
+      <Button variant="dark" className="add" onClick={() => history.push("/library")}>
+        Back
       </Button>
       <br></br>
       <br></br>

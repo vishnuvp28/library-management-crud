@@ -79,7 +79,7 @@ box-shadow: 5px 5px 12px rgb(32, 31, 31),
 }
 
 .add {
-  width: 500px;
+  width:400px;
 }
 .back {
   width: 100px;
@@ -106,6 +106,40 @@ box-shadow: 5px 5px 12px rgb(32, 31, 31),
   width:800px;
 }
  
-/* .addnew{
-  
-} */
+.addnew{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+ padding :10px;
+ background-image: linear-gradient(
+  to top,
+  rgba(0, 0, 0, 0.7) 50%,
+  rgba(0, 0, 0, 0.7) 50%
+),
+url(https://i0.wp.com/rbms.info/wp-content/uploads/2014/05/special-collections-books-700x300.jpg?resize=640%2C300);
+height: 90vh;
+}
+
+.home{
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.7) 50%,
+    rgba(0, 0, 0, 0.7) 50%
+  ),
+  url(https://i0.wp.com/rbms.info/wp-content/uploads/2014/05/special-collections-books-700x300.jpg?resize=640%2C300);
+  color:white;
+}
+
+img{
+  object-fit: contain;
+  height: 600px;
+}
+
+.vp{
+  text-align: left;
+  margin-left: 20px;
+}
+p{
+  padding:10px;
+}

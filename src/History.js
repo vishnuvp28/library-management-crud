@@ -29,7 +29,7 @@ export function History({ his, setHis }) {
                 </Button>{" "}
                 <Button
                   variant="success"
-                  onClick={() => history.push("/hisedit")}
+                  onClick={() => history.push(`/hisedit/${per.id}`)}
                 >
                   Edit
                 </Button>{" "}
@@ -47,8 +47,11 @@ export function History({ his, setHis }) {
         onClick={() => history.push("/hisadd")}
       >
         Add
-      </Button>
-      <br></br><br></br><br></br>
+      </Button>{" "}
+      <Button variant="dark" className="add" onClick={() => history.push("/library")}>
+        Back
+      <br></br>
+      </Button><br></br><br></br>
     </Base>
   );
 }

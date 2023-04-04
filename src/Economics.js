@@ -26,7 +26,7 @@ export function Economics({ eco, setEco }) {
             <Button variant="primary" onClick={() => history.push(`/ecoview/${idx}`)}>
               View
             </Button>{" "}
-            <Button variant="success" onClick={() => history.push("/ecoedit")}>
+            <Button variant="success" onClick={() => history.push(`/ecoedit/${per.id}`)}>
               Edit
             </Button>{" "}
             <Button variant="danger" onClick={() => deleteUser(per.id)}>
@@ -43,7 +43,11 @@ export function Economics({ eco, setEco }) {
         onClick={() => history.push("/ecoadd")}
       >
         Add
-      </Button><br></br><br></br><br></br>
+      </Button>{" "}
+     
+      <Button variant="dark" className="add" onClick={() => history.push("/library")}>
+        Back
+      </Button><br></br><br></br>
     </Base>
   );
 }
